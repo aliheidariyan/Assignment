@@ -84,7 +84,6 @@
     <Compile Include="BaseAUT.cs" />
     <Compile Include="BaseTestSenarios.cs" />
     <Compile Include="Browsers.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="Env.cs" />
     <Compile Include="FunctionAction\ChangePasswordAction.cs" />
     <Compile Include="FunctionAction\LoginAndChangePasswordAction.cs" />

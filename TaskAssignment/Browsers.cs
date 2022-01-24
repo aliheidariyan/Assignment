@@ -44,6 +44,10 @@ namespace TaskAssignment
                 {
                     case "Chrome":
                         AppiumOptions capabilities = new AppiumOptions();
+                        capabilities.AddAdditionalCapability(MobileCapabilityType.BrowserName, "Chrome");
+                        capabilities.AddAdditionalCapability(MobileCapabilityType.DeviceName, "Nexus");
+                        capabilities.AddAdditionalCapability(MobileCapabilityType.PlatformName, App.AndroidDeviceName());
+                        capabilities.AddAdditionalCapability(MobileCapabilityType.AutomationName, "UIAutomator2");
                         // capabilities.SetCapability(MobileCapabilityType.BrowserName, "");
                         // capabilities.SetCapability(MobileCapabilityType.PlatformName, App.AndroidDeviceName());
                         // capabilities.SetCapability(MobileCapabilityType.PlatformVersion, App.AndroidPlatformVersion());
@@ -53,11 +57,7 @@ namespace TaskAssignment
                         //capabilities.SetCapability(MobileCapabilityType.App, App.AndroidApp());
                         // //capabilities.SetCapability(MobileCapabilityType.App, "C:\\yy\\WikipediaSample.apk");
 
-                        capabilities.AddAdditionalCapability(MobileCapabilityType.BrowserName, "Chrome");
-                        capabilities.AddAdditionalCapability(MobileCapabilityType.DeviceName, "Nexus");
-                        capabilities.AddAdditionalCapability(MobileCapabilityType.PlatformName, App.AndroidDeviceName());
                         //capabilities.SetCapability(MobileCapabilityType.PlatformVersion, App.IOSPlatformVersion());
-                        capabilities.AddAdditionalCapability(MobileCapabilityType.AutomationName, "UIAutomator2");
                         //capabilities.SetCapability(MobileCapabilityType.DeviceName, App.IOSDeviceName());
                         //capabilities.SetCapability(MobileCapabilityType.App, App.IOSApp());
                         //var c = new RemoteWebDriver(Env.ServerUri(), capabilities);
